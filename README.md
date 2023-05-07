@@ -13,6 +13,8 @@
 
 ## Chromedriver 修改
 
+chromedriver.exe获取地址`https://registry.npmmirror.com/binary.html?path=chromedriver/`
+
 1. 下载Hexedit或者使用Vscode中的Hexedit插件
 2. 使用Hexedit打开chromedriver.exe 
 3. 搜索 `$cdc_`
