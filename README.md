@@ -13,7 +13,7 @@
 
 ## Chromedriver 修改
 
-chromedriver.exe获取地址`https://registry.npmmirror.com/binary.html?path=chromedriver/`
+chromedriver.exe [获取地址](https://registry.npmmirror.com/binary.html?path=chromedriver/)
 
 1. 下载Hexedit或者使用Vscode中的Hexedit插件
 2. 使用Hexedit打开chromedriver.exe 
