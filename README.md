@@ -9,11 +9,11 @@
 >
 > 2023.03.23 感谢 @wuliang9524 提供的解决方案, 需要修改chromedriver以隐藏爬虫标志
 >
-> 2023.05.07 大麦新机制是先选场次才会出现票价选项，所以场次和票价不能一同获取（原代码只有一个场次的还是可以正常使用，多场次就不行了）
+> **2023.05.07 大麦新机制是先选场次才会出现票价选项，所以场次和票价不能一同获取（原代码只有一个场次的还是可以正常使用，多场次就不行了）**
 
 ## Chromedriver 修改
 
-chromedriver.exe [获取地址](https://registry.npmmirror.com/binary.html?path=chromedriver/)
+**chromedriver.exe [获取地址](https://registry.npmmirror.com/binary.html?path=chromedriver/)**
 
 1. 下载Hexedit或者使用Vscode中的Hexedit插件
 2. 使用Hexedit打开chromedriver.exe 
@@ -53,4 +53,4 @@ chromedriver.exe [获取地址](https://registry.npmmirror.com/binary.html?path=
 1. 账号必须先做好实名制认证，并添加至少一个实名制的人的信息
 2. 第一次打开后会进入登录页面，需要手动选择扫码登陆
 3. 如果太久没用，需要先清空目录下的 cookie 文件，然后在重新登录
-4. 实名信息暂时懒处理了下（会读取所有实名信息挨个勾选，也是因为我就要抢四张票，恰好我只有四个实名信息），后续再优化
+4. **实名信息暂时懒处理了下（会读取所有实名信息挨个勾选，也是因为我就要抢四张票，恰好我只有四个实名信息），后续再优化**
