@@ -271,8 +271,9 @@ class Concert(object):
                     by=By.CLASS_NAME, value='icondanxuan-weixuan_')
                 
             sleep(0.5)                
-            for p in people_list:
-                p.click()
+            for i in self.real_name:
+                j = people_list[i-1]
+                j.click()
                 
             comfirmBtn = self.driver.find_element(
                 By.XPATH, '//*[@id="dmOrderSubmitBlock_DmOrderSubmitBlock"]/div[2]/div/div[2]/div[3]/div[2]')
