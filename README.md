@@ -13,7 +13,7 @@
 >
 > **2023.05.07 大麦新机制是先选场次才会出现票价选项，所以场次和票价不能一同获取（原代码只有一个场次的还是可以正常使用，多场次就不行了）**
 
-## Chromedriver 修改
+## 【Windows 用户】 Chromedriver 修改
 
 **chromedriver.exe [获取地址](https://registry.npmmirror.com/binary.html?path=chromedriver/)**
 
@@ -22,8 +22,17 @@
 3. 搜索 `$cdc_`
 4. 更改为任意其他字符串，如`$cxx_`
 
+## 【MacOS 用户】Chromedriver 安装
+1. 首先在chrome里面打开设定（<kbd>cmd+,</kbd>），在左下栏里面点击“关于chrome”，查看chrome的版本号。
+2. 在[这里](https://chromedriver.chromium.org/downloads)下载对应的（111, 112, 113）Chromedriver，并解压。
+3. 解压后的文件夹里面有一个binary的执行文件档案和一个授权文件。
+4. 在Finder里面，按<kbd>cmd+shift+G</kbd>，输入`/usr/local/bin`将下载好的Chromedriver移动到这里。
+5. 在终端里面输入`sudo chmod +x /usr/local/bin/chromedriver`，输入密码，授权Chromedriver。
+6. 在终端里面输入`chromedriver`，如果出现`Starting ChromeDriver...`，则说明安装成功。
+7. 在 `config.json` 文件中，修改 `"driver_path": /usr/local/bin/chromedriver`。
+8. **注意**：初次运行软件的时候可能会显示运行程序未得到授权，此时需要在`系统偏好设置-安全性与隐私`中点击`允许`。
 
-## 配置文件
+## 【Windows用户】配置文件
 
 ```json
 {
@@ -34,6 +43,22 @@
     "nick_name": "",
     "ticket_num": 3,
     "driver_path": "./chromedriver.exe",
+    "damai_url": "https://www.damai.cn/",
+    "target_url": "https://m.damai.cn/damai/detail/item.html?itemId=704494827883&spm=a2o71.category.itemlist.ditem_3"
+}
+
+```
+
+## 【MacOS用户】配置文件
+```json
+{
+    "date": [1],
+    "sess": [1],
+    "price": [2],	
+    "real_name": [1],
+    "nick_name": "",
+    "ticket_num": 3,
+    "driver_path": "/usr/local/bin/chromedriver",
     "damai_url": "https://www.damai.cn/",
     "target_url": "https://m.damai.cn/damai/detail/item.html?itemId=704494827883&spm=a2o71.category.itemlist.ditem_3"
 }
